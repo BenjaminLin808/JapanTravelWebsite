@@ -27,6 +27,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
     section.logo{
         flex: 3 1 400px;
         display: flex;
