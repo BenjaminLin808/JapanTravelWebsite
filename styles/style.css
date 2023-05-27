@@ -27,6 +27,7 @@ body header {
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 10px 6px -6px #777;
 }
 body header section.logo {
   flex: 3 1 400px;
@@ -183,4 +184,19 @@ body footer section.links a img {
   body header nav ul li {
     padding: 0.5rem 0.25rem;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(152, 57, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(134, 28, 134);
 }/*# sourceMappingURL=style.css.map */
