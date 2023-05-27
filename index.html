@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Travel Recommendation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/MountFuji2.jpg" alt="Fixed-image" />
+    <header>
+      <section class="logo">
+        <img src="./images/Logo.svg" alt="Japan Travel Website Logo" />
+        <h1>2023 Japan Travel Recommendation</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> Japan Travel</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-right-to-bracket"></i> Member Login</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-book"></i> Book An Itinerary</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-address-book"></i> Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <h3>Leisure Space, Special Holiday<br />Arrange A Trip To Japan</h3>
+      </section>
+
+      <section class="info-circles">
+        <h3>Travel Theme</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/HokkaidoSnow.jpg" alt="Hokkaido Snow Scene" />
+            <p>The snow scenery of Hokkaido is so beautiful</p>
+          </div>
+          <div class="circle">
+            <img src="./images/JapaneseSushi.jpg" alt="Japanese Sushi" />
+            <p>Japanese sushi and other delicacies</p>
+          </div>
+          <div class="circle">
+            <img src="./images/MountFuji.jpg" alt="Mount Fuji" />
+            <p>Mount Fuji scenery and hot springs</p>
+          </div>
+          <div class="circle">
+            <img src="./images/KiyomizuTemple.jpg" alt="Kiyomizu Temple" />
+            <p>Kiyomizu Temple in Kyoto, the ancient capital</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3>Start planning your itinerary today and find the best option</h3>
+      </section>
+
+      <section class="google-map">
+        <h3>Geography of Japan</h3>
+        <p>
+          Japan (Japanese: 日本, Nippon or Nihon,[nb 1] and formally 日本国,
+          Nihonkoku)[nb 2] is an island country in East Asia. It is situated in
+          the northwest Pacific Ocean and is bordered on the west by the Sea of
+          Japan, extending from the Sea of Okhotsk in the north toward the East
+          China Sea, Philippine Sea, and Taiwan in the south.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59019836.80555319!2d93.15897883965582!3d25.462158523403208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sus!4v1685136733575!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <section class="logo">
+        <img src="./images/Logo.svg" alt="logo" />
+        <h3>2023Japan Travel Recommendation</h3>
+      </section>
+
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage ==
+          'url("./images/JapanCherryBlossom.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("./images/OldKyotoVity.jpg")';
+        } else if (
+          topBackground.style.backgroundImage ==
+          'url("./images/OldKyotoVity.jpg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("./images/OsakaStreet.jpg")';
+        } else {
+          topBackground.style.backgroundImage =
+            'url("./images/JapanCherryBlossom.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
