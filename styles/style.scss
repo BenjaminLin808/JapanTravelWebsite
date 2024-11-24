@@ -4,10 +4,18 @@ $themeColor:rgb(152, 57,255, 0.5);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+
 }
 
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
+}
+
+h1{
+    text-shadow: 10px 5px 5px rgb(123, 82, 238);
+    font-weight: normal;
+    font-family: "Kanit", sans-serif;
 }
 
 body{
@@ -59,9 +67,11 @@ body{
                         font-size: 1.35rem;
                         transition:all 0.2s ease;
                         padding-bottom: 0.3rem;
+                        text-shadow: 10px 5px 5px rgb(123, 82, 238);
                         &:hover{
                             color: $themeColor;
                             border-bottom: 3px solid $themeColor;
+                            text-shadow: none;
                         }
                     }
                 }
@@ -103,7 +113,7 @@ body{
         }
 
         section.info-circles {
-            background-color: white;
+            background: linear-gradient(to top, rgb(233, 173, 235), rgb(195, 5, 243));
             padding: 2rem 1rem;
 
             h3{
@@ -150,7 +160,7 @@ body{
         }
 
         section.google-map{
-            background-color: white;
+            background: transparent;
             padding: 2rem 1rem;
             text-align: center;
             h3{

@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+}
+
+h1 {
+  text-shadow: 10px 5px 5px rgb(123, 82, 238);
+  font-weight: normal;
+  font-family: "Kanit", sans-serif;
 }
 
 body {
@@ -55,10 +62,12 @@ body header nav ul li a {
   font-size: 1.35rem;
   transition: all 0.2s ease;
   padding-bottom: 0.3rem;
+  text-shadow: 10px 5px 5px rgb(123, 82, 238);
 }
 body header nav ul li a:hover {
   color: rgba(152, 57, 255, 0.5);
   border-bottom: 3px solid rgba(152, 57, 255, 0.5);
+  text-shadow: none;
 }
 body main section.background-img {
   min-height: 70vh;
@@ -87,7 +96,7 @@ body main section.background-img h3 {
   text-align: center;
 }
 body main section.info-circles {
-  background-color: white;
+  background: linear-gradient(to top, rgb(233, 173, 235), rgb(195, 5, 243));
   padding: 2rem 1rem;
 }
 body main section.info-circles h3 {
@@ -128,7 +137,7 @@ body main section.empty-container h3 {
   color: white;
 }
 body main section.google-map {
-  background-color: white;
+  background: transparent;
   padding: 2rem 1rem;
   text-align: center;
 }
