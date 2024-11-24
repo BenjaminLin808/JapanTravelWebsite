@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "kanit", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+}
+
+h1 {
+  text-shadow: 10px 5px 5px rgb(139, 45, 247);
 }
 
 body {
@@ -60,6 +60,8 @@ body header nav ul li a {
   font-size: 1.35rem;
   transition: all 0.2s ease;
   padding-bottom: 0.3rem;
+  text-shadow: 10px 5px 5px rgb(139, 45, 247);
+  transition: text-shadow 0.5s ease, color 0.3s ease;
 }
 body header nav ul li a:hover {
   color: rgba(152, 57, 255, 0.5);
@@ -93,7 +95,6 @@ body main section.background-img h3 {
   text-align: center;
 }
 body main section.info-circles {
-  background-color: white;
   padding: 2rem 1rem;
   background: linear-gradient(to top, rgb(214, 158, 236), rgb(156, 97, 212));
 }
@@ -135,7 +136,7 @@ body main section.empty-container h3 {
   color: white;
 }
 body main section.google-map {
-  background-color: white;
+  background-color: transparent;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -207,4 +208,4 @@ body footer section.links a img {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(134, 28, 134);
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
