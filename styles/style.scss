@@ -4,12 +4,15 @@ $themeColor:rgb(152, 57,255, 0.5);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "kanit", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
 }
-
+h1{
+    text-shadow: 10px 5px 5px rgb(139, 45, 247);
+}
 body{
     position: relative;
 
@@ -59,9 +62,12 @@ body{
                         font-size: 1.35rem;
                         transition:all 0.2s ease;
                         padding-bottom: 0.3rem;
+                        text-shadow: 10px 5px 5px rgb(139, 45, 247);
+                        transition: text-shadow 0.5s ease, color 0.3s ease;
                         &:hover{
                             color: $themeColor;
                             border-bottom: 3px solid $themeColor;
+                            text-shadow: none;
                         }
                     }
                 }
@@ -103,9 +109,8 @@ body{
         }
 
         section.info-circles {
-            background-color: white;
             padding: 2rem 1rem;
-
+            background: linear-gradient(to top, rgb(214, 158, 236), rgb(156, 97, 212));
             h3{
                 text-align: center;
                 font-size: 2rem;
@@ -150,7 +155,7 @@ body{
         }
 
         section.google-map{
-            background-color: white;
+            background-color: transparent;
             padding: 2rem 1rem;
             text-align: center;
             h3{
@@ -164,6 +169,7 @@ body{
             iframe{
                 width: 100%;
                 height: 40vh;
+                border-radius: 10px;
             }
         }
     
